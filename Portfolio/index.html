@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Petr Burša</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="Portfolio/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Portfolio/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Portfolio/favicon/favicon-16x16.png">
+</head>
+<body>
+<input type="checkbox" id="active">
+<label for="active" class="menu-btn"><span></span></label>
+<label for="active" class="close"></label>
+<div class="wrapper">
+    <ul>
+        <li><a href="#slides a">Home</a></li>
+        <li><a href="#slides b">Info</a></li>
+        <li><a href="#slides c">Portfolio</a></li>
+        <li><a href="#slides d">Kontakt</a></li>
+    </ul>
+</div>
+<div class="Tag" ><a href="#slides d">©Petr Burša</a> </div>
+<div class="content">
+    <div id="slides a">
+        <div class="a">
+        <p>Petr Burša</p>
+        <p>Student SŠ Baltaci</p>
+        </div>
+    </div>
+    <div id="slides b">
+        <div class="box">
+            <div class="info">
+                <p>Info</p>
+                <br></br>
+                <div class="main">
+                    <ul class="cards">
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image1"><img src="https://picsum.photos/500/300/?image=5"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">IT</h2>
+                                    <h3 class="card_text">Mám rád IT, ale nejraději programování</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image2"><img src="https://picsum.photos/500/300/?image=10"></div>
+                                <div class="card_content">
+                                    <h1 class="card_title">Příroda</h1>
+                                    <h3 class="card_text">Miluji přírodu za to co nám nabízí a dává</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards_item">
+                            <div class="card">
+                                <div class="card_image3"><img src="https://picsum.photos/500/300/?image=40"></div>
+                                <div class="card_content">
+                                    <h2 class="card_title">mnau</h2>
+                                    <h3 class="card_text">Kočky jsou ty nejlepší zvířata na světě</h3>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slides c">
+        <div class="boxe">
+        <p>Portfolio</p>
+            <article>
+                <h1></h1>
+                <div class="container-all">
+                    <div class="container_portfolio">
+                        <img src="smurfcatnobc.png" alt="">
+                        <span class="title">Grafika</span>
+                        <span class="text">Nic co bych chtěl ukázat</span>
+                    </div>
+                    <div class="container_portfolio">
+                        <img src="unnamed-removebg-preview.png" alt="">
+                        <span class="title">C#</span>
+                        <span class="text">Zatím nemám projetky.</span>
+                    </div>
+                    <div class="container_portfolio">
+                        <img src="" alt="">
+                        <span class="title">Html</span>
+                        <span class="text">Tato stránka je má ukázka Html.</span>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="slides d">
+        <div class="boxe">
+            <p>Kontakt</p>
+            <form class="cf" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="596c30fe-2cc5-45bb-ad52-1ddba3c6cde6">
+                <div class="half left cf">
+                    <input type="text" name="name" placeholder="Jméno" required>
+                    <input type="email" name="email" placeholder="Emailová adresa" required>
+                    <input type="text" name="subject" placeholder="Předmět" required>
+                </div>
+                <div class="half right cf">
+                    <textarea name="message" type="text" id="input-message" placeholder="Text" required></textarea>
+                </div>
+                <input type="submit" value="Odeslat" id="input-submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
