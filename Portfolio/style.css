@@ -456,3 +456,13 @@ button:hover {
     
 }
 
+.social{
+    
+    display: flex;
+    align-content: end;
+    justify-content: center;
+}
+.social i {
+    padding: 0.5em;
+}
+
