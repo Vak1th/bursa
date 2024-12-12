@@ -18,16 +18,10 @@ body{
     right: -100%;
     height: 100%;
     width: 100%;
-    background: #ffffff;
-    background: linear-gradient(90deg, #131944, #2e57e7);
+    background: linear-gradient(90deg, #131944, #2e56e7);
     transition: all 0.6s ease-in-out;
 }
-@media screen and (min-width: 1000px){
-    .wrapper{
-        visibility: hidden;
-        display: none;
-    }
-}
+
 #active:checked ~ .wrapper{
     right:0;
 }
@@ -103,7 +97,7 @@ body{
 }
 .wrapper ul li a{
     text-decoration: none;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 500;
     padding: 5px 30px;
     color: #fff;
@@ -113,12 +107,7 @@ body{
     margin: auto;
     opacity: 0;
 }
-@media screen and (min-width: 1000px){
-    .wrapper ul li a{
-        visibility: hidden;
-        display: none;
-    }
-}
+
 .wrapper ul li a:after{
     position: absolute;
     content: "";
@@ -210,10 +199,30 @@ input[type="checkbox"]{
     color: #fff;
     scroll-snap-align: start;
 }
+.fizz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fizz img{
+    max-width: 50%;
+}
+@media (max-width: 600px) {
+    .fizz{
+        flex-direction: column;
+    }
+}
+.jmeno{
+    background-color: rgba(34, 20, 165, 0.25); 
+    border-radius: 25px;
+    padding: 10px 20px; 
+
+}
 .box{
     background-color: rgba(20, 85, 199, 0.35);
     width: 80%;
-    height: 80%;
+    height: 70%;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -227,6 +236,12 @@ input[type="checkbox"]{
     margin: 0px 300px 0px 300px;
     font-size: 20px;
     text-align: start;
+}
+@media  (max-width: 1000px) {
+    .box p{
+        margin: 0px 100px 0px 100px;
+        font-size: 30px;
+    }
 }
 
 
@@ -277,7 +292,6 @@ input[type="checkbox"]{
     margin:3px;
     padding: 0;
     display:block;
-    position:relative;
     margin-left: auto;
     margin-right: auto;
 }
@@ -287,7 +301,7 @@ input[type="checkbox"]{
     }
 }
 
-img{
+.container_portfolio img{
     width: 100%;
     transition-duration: .3s;
     max-width: 100%;
@@ -364,7 +378,9 @@ header{
 }
 
 .logo:hover{
+    color: #000;
     transform: rotate(360deg);
+
 }
 
 nav a{
@@ -386,76 +402,61 @@ nav a:hover{
         visibility: hidden;
         display: none;
     }
-    .logo{
-        visibility: hidden;
-        display: none;
-    }
     .header{
         visibility: hidden;
         display: none;
     }
     
 }
-.fizz{
-    width: 50vw;
-    height: 45vh;
-    background-image: url('images/PngItem_255831.png'); /* Replace with the actual image URL */
-    background-size: cover; /* Adjust to make the image cover the entire container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Avoid repeating the image */
-    color: white; /* Optional: Make text stand out against the background */
-    text-align: center; /* Optional: Center the text */
-    padding: 20px; /* Optional: Add space inside the container */
-}
-.jmeno{
-    background-color: rgba(34, 20, 165, 0.25); 
+
+.Contact{
+    background-color: rgba(20, 85, 199, 0.25);
+    width: 80%;
+    height: 70%;
     border-radius: 25px;
-    padding: 10px 20px; 
-
-}   
-form {
-    max-width: 600px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem;
     margin: 20px auto;
+    
 }
 
-input, textarea {
-    border: 0;
-    outline: 0;
-    padding: 1em;
-    border-radius: 8px;
-    display: block;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea, button {
     width: 100%;
-    margin-top: 1em;
-    font-family: 'Merriweather', sans-serif;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    resize: none;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
-#input-submit {
-    color: white;
-    background: linear-gradient(to bottom right, #232c60, #2e57e7);
+button {
+    background: #333;
+    color: #fff;
+    border: none;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
-#input-submit:hover {
-    box-shadow: 0 1px 1px 1px rgba(100, 100, 100, 0.6);
+button:hover {
+    background: #00ffd9;
 }
-
-textarea {
-    height: 126px;
-}
-
-.half {
-    float: left;
-    width: 48%;
-    margin-bottom: 1em;
-}
-
-.right {
-    width: 50%;
-}
-
-.left {
-    margin-right: 2%;
+.socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #00ffd9;
 }

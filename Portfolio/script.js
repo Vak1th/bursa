@@ -1,0 +1,3 @@
+function closeburger(){
+        active.click();
+}
