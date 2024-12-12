@@ -457,13 +457,23 @@ button:hover {
 }
 
 .social{
-    
+    margin-top: 2em;
     display: flex;
     align-content: end;
     justify-content: center;
 }
-.social i {
+.social a {
     padding: 0.5em;
     font-size: 2em;
-}
+    text-decoration: none;
 
+}
+.social a:hover{
+    color: #00ffd9;
+}
+@media (max-width: 1000px) {
+    .social a{
+        padding: 1em;
+        font-size: 5em;
+    }
+}
