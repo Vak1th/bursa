@@ -271,23 +271,20 @@ input[type="checkbox"]{
 }
 .container-all{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-content: space-around;
     padding: 2rem;
     margin: 20px auto;
     height: 200rem;
     width: auto;
 }
-@media (max-width: 1000px){
-    .container-all{
-        flex-direction: column;
-    }
-}
+
 .container_boxy p{
     font-size: 3rem;
     margin-bottom: -3rem;
 }
 .container_portfolio{
-    width: calc(33% - 6px);
+    width: calc(44% - 6px);
     overflow: hidden;
     height: auto;
     margin:3px;
@@ -299,6 +296,9 @@ input[type="checkbox"]{
 @media (min-width: 1000px){
     .container_portfolio{
         width: 10rem;;
+    }
+    .container-all{
+        flex-direction: row;
     }
 }
 
@@ -316,7 +316,7 @@ input[type="checkbox"]{
     cursor:pointer;
     display: none;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 3.2em;
     text-shadow: 1px 5px 10px black;
     transition-duration: .3s;
 }
@@ -325,10 +325,17 @@ input[type="checkbox"]{
     cursor:pointer;
     text-align:center;
     text-shadow: 1px 5px 10px black;
-    font-size: 1em;
+    font-size: 2em;
     display:none;
     transition-duration: .3s;
-    transform: ;
+}
+@media (min-width: 1000px){
+   .title{
+        font-size: 1.6em;
+    }
+    .text{
+        font-size: 1em;
+    }
 }
 
 .container_portfolio:hover span{
@@ -413,11 +420,11 @@ form {
 }
 
 input, textarea, button {
-    width: 100%;
-    padding: 0.8rem;
+    width: 70%;
+    padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 button {
@@ -431,16 +438,21 @@ button {
 button:hover {
     background: #00ffd9;
 }
-.socials a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: #00ffd9;
+
+@media (max-width: 1000px) {
+    .logo{
+        font-size: 5rem;
+    }
+    .Contact p {
+        font-size: 3rem;
+    }
+    input, textarea, button {
+        width: 70%;
+        padding: 1rem;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 2rem;
+    }
+    
 }
+
