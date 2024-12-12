@@ -28,7 +28,7 @@ gsap.from(".menu",{
     opacity: 0,
     duration: 2,
 })
-gsap.from(".ifo",{
+gsap.from(".ino",{
     opacity: 0,
     duration: 3.5,
     scrollTrigger: {
@@ -37,17 +37,17 @@ gsap.from(".ifo",{
         toggleActions: "play none none none" 
       }
 })
-gsap.from(".tex1",{
+gsap.from(".text1",{
     opacity: 0,
     duration: 1.5,
     x:100,
     scrollTrigger: {
-        trigger: ".text1", 
+        trigger: ".tet1", 
         start: "top 80%",
         toggleActions: "play none none none" 
       }
 })
-gsap.from(".txt2",{
+gsap.from(".tet2",{
     opacity: 0,
     duration: 1.5,
     x:0,
