@@ -3,7 +3,7 @@
     display: none;
 }
 body{
-    background-image: linear-gradient(to bottom right, #333333, #232c60, #2e57e7,#489ccb,#ffffff);
+    background-color: linear-gradient(to bottom right, #333333, #232c60, #2e57e7,#489ccb,#ffffff);
     overflow: hidden;
 }
 *{
@@ -216,24 +216,89 @@ input[type="checkbox"]{
     height: 80%;
     border-radius: 25px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.box h1{
-    color: #00ffd9;
-}
-.box p{
-    margin: 0px 200px 0px 200px;
-    font-size: 20px;
-    text-align: start;
-}
 
 
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input, textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+#input-submit {
+    color: white;
+    background: linear-gradient(to bottom right, #232c60, #2e57e7);
+    cursor: pointer;
+}
+
+#input-submit:hover {
+    box-shadow: 0 1px 1px 1px rgba(100, 100, 100, 0.6);
+}
+
+textarea {
+    height: 126px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+/* Clearfix for floating elements */
+.cf:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 1em;
+    }
+
+    .right {
+        width: 100%; /* Ensure the right half spans full width */
+    }
+
+    .left {
+        margin-right: 0; /* Remove unnecessary margin */
+    }
+
+    textarea {
+        margin-top: 0; /* Align with the form structure */
+    }
+}
 .boxe{
     background-color: rgba(20, 85, 199, 0.25);
     width: 80%;
-    height: 70%;
+    height: 80%;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -266,9 +331,10 @@ input[type="checkbox"]{
         flex-direction: column;
     }
 }
-.container_boxy p{
+.nadpis_projects{
+    margin-bottom: 1.5rem;
     font-size: 3rem;
-    margin-bottom: -3rem;
+    text-align: bottom ;
 }
 .container_portfolio{
     width: calc(33% - 6px);
@@ -413,49 +479,3 @@ nav a:hover{
     padding: 10px 20px; 
 
 }   
-form {
-    max-width: 600px;
-    text-align: center;
-    margin: 20px auto;
-}
-
-input, textarea {
-    border: 0;
-    outline: 0;
-    padding: 1em;
-    border-radius: 8px;
-    display: block;
-    width: 100%;
-    margin-top: 1em;
-    font-family: 'Merriweather', sans-serif;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    resize: none;
-}
-
-#input-submit {
-    color: white;
-    background: linear-gradient(to bottom right, #232c60, #2e57e7);
-    cursor: pointer;
-}
-
-#input-submit:hover {
-    box-shadow: 0 1px 1px 1px rgba(100, 100, 100, 0.6);
-}
-
-textarea {
-    height: 126px;
-}
-
-.half {
-    float: left;
-    width: 48%;
-    margin-bottom: 1em;
-}
-
-.right {
-    width: 50%;
-}
-
-.left {
-    margin-right: 2%;
-}
