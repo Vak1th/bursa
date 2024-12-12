@@ -473,7 +473,7 @@ button:hover {
 }
 @media (max-width: 1000px) {
     .social a{
-        padding: 1em;
+        padding: 0,1em;
         font-size: 5em;
     }
 }
